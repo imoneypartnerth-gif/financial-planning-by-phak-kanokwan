@@ -1359,7 +1359,8 @@
       document.getElementById('successBox').style.display = 'block';
       // แจ้ง Google Ads ว่ามี Conversion เกิดขึ้น
       if (typeof gtag !== 'undefined') {
-        gtag('event', 'ads_conversion_Submit_lead_form_1', {});
+        gtag('event', 'conversion', {'send_to': 'AW-11371234695/_Kr0CNik0rgcEleLna4q',
+                                     'value': 500,'currency': 'THB'});
       }
     })
     .catch(function() {
